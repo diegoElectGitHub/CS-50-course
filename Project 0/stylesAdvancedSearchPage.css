@@ -1,0 +1,77 @@
+@media (min-width:401px){
+    div{
+        font-size: 15px;
+    }
+}
+@media (max-width:400px){
+    div{
+        font-size: 8px;
+    }
+}
+#nav{
+    height: 55px;
+    background-color: transparent;
+}
+#nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#nav ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px;
+    line-height: 35px;
+    float: right;
+    display: inline-block;
+    color: black;
+}
+#nav ul li a:hover{
+    text-decoration: underline;
+    background-color: lavender;
+    color: black;
+}
+#content{
+    margin:1px;
+}
+#title{
+    color: red;
+    font-size: 18px;
+}
+#subtitle{
+    font-size: 14px;
+}
+.imagen{
+    max-width: 30%;
+    max-height: 30%;
+    display: block;
+    margin: auto;
+}
+.textInputs{
+    width: 240px;
+    text-align: left;
+    display: inline-block;
+    font-size: 12px;
+}
+.inputs{
+    margin-left: 30px;
+    width: 240px;
+    display: inline-block;
+    font-size: 12px;
+}
+.buttonSubmit{
+    margin-left: 30px;
+    background-color: blue;
+    color: white;
+    font-size: 12px;
+    width: 240px;
+}
+.footer{
+    left: 0;
+    bottom: 0;
+    margin-left: 10px;
+    width: 100%;
+    background-color: transparent;
+    color: black;
+    text-align: left;
+}
