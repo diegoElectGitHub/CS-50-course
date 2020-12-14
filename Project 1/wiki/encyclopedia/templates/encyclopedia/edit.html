@@ -1,0 +1,21 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia: {{ title }}
+{% endblock %}
+
+{% block body %}    
+    <form method="POST">
+        {% csrf_token %}
+        {% for field in form_edit %}
+            {% if field == form_edit.title %}
+                <h6>Title:</h6>
+            {% else %}
+                <h6>Content:</h6>
+            {% endif %}    
+            {{ field }}
+        {% endfor %}
+        <br>
+        <input type="submit" value="Save changes">
+    </form>
+{% endblock %}
